@@ -19,22 +19,25 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         body: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(
-                height: 25,
+                height: 55,
               ),
               const Text('Hi There!',
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
                   )),
               const SizedBox(
-                height: 10,
+                height: 20,
               ),
               const Text('Welcome, We Missed U ',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 10,
+                    fontWeight: FontWeight.normal,
+                    fontSize: 20,
                   )),
+                  SizedBox(height: 14,),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: Container(
@@ -78,7 +81,7 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               const SizedBox(
-                height: 20,
+                height: 28,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 22),
@@ -98,6 +101,25 @@ class _MyAppState extends State<MyApp> {
                     ),
                   )),
                 ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text(
+                    'Not a Maember?',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    'Register Now',
+                    style: TextStyle(
+                      color: Colors.blue[800],
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
               )
             ],
           ),
