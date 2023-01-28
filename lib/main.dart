@@ -20,17 +20,17 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 25,
               ),
-              Text('Hi There!',
+              const Text('Hi There!',
                   style: TextStyle(
                     fontSize: 24,
                   )),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Text('Welcome, We Missed U ',
+              const Text('Welcome, We Missed U ',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 10,
@@ -53,6 +53,9 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
               ),
+              const SizedBox(
+                height: 10,
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: Container(
@@ -65,6 +68,7 @@ class _MyAppState extends State<MyApp> {
                   child: const Padding(
                     padding: EdgeInsets.only(left: 20.0),
                     child: TextField(
+                      obscureText: true,
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Password',
@@ -73,6 +77,28 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
               ),
+              const SizedBox(
+                height: 20,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 22),
+                child: Container(
+                  padding: EdgeInsets.all(15.0),
+                  decoration: BoxDecoration(
+                    color: Colors.deepPurple[700],
+                    borderRadius: BorderRadius.circular(13),
+                  ),
+                  child: const Center(
+                      child: Text(
+                    'Sign in',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  )),
+                ),
+              )
             ],
           ),
         ),
